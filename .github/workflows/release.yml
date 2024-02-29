@@ -37,6 +37,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          checksum.txt
+          sha256sums.txt
           release/*.zip
           release/*.tar.gz
