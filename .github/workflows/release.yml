@@ -23,6 +23,7 @@ jobs:
       with:
         hash-type: sha256
         file-name: sha256sums.txt
+        get-assets: true
     - uses: actions/upload-artifact@v2
       with:
         name: Asset Hashes
