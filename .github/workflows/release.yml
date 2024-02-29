@@ -21,6 +21,12 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
         goarch: amd64
+  release-artifacts:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Sources
+      uses: actions/checkout@v4          
     - name: Download releaseartifacts
       uses: actions/download-artifact@v2
       with:
