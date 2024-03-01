@@ -28,12 +28,11 @@ jobs:
       with:
         output: sha256sums.txt
         patterns: |
-          release/*.zip
-          release/*.tar.gz
+          *.zip
+          *.tar.gz
     - name: Create release
       uses: softprops/action-gh-release@v1
       with:
         files: |
           sha256sums.txt
-          release/*.zip
-          release/*.tar.gz
+          *.tar.gz
